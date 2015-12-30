@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
-    $('.main-top-bar').affix({
-        offset: {top: $('.main-top-bar').offset().top}
+    $('nav.categories').affix({
+        offset: { top: $('nav.categories').offset().top }
     });
 });
 $(document).on('click touchstart', function (e) {

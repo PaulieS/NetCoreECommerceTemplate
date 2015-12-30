@@ -52,6 +52,11 @@ ul.lang-selector li {
 .affix .shop-name {
   float: right;
 }
+@media (min-width: 992px) {
+  .affix ul.categories {
+    display: none;
+  }
+}
 @media (max-width: 992px) {
   .affix .shop-name {
     display: none;
@@ -82,9 +87,15 @@ ul.subcategories {
   margin: 5px 10px 5px 10px;
   padding: 0;
 }
+/*-----------------------SPECIAL OFFERS----------------------------*/
 /*Special offers*/
+.super-offers-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .super-offer-item {
-  display: inline-block;
   text-align: center;
   padding: 10px 10px 10px 10px;
 }
