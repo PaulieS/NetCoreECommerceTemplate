@@ -3,6 +3,8 @@
 	"name": "ASP.NET",
 	"private": true,
   "devDependencies": {
-    "gulp": "3.9.0"
+    "gulp": "3.9.0",
+    "grunt-contrib-less": "1.1.0",
+    "less": "2.5.3"
   }
 }

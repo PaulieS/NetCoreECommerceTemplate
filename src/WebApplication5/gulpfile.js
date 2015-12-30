@@ -8,5 +8,7 @@ var gulp = require('gulp');
 gulp.task('copyPlugins', function () {
     gulp.src('./bower_modules/bootstrap/dist/**').pipe(gulp.dest('./wwwroot/Components/bootstrap'));
     gulp.src('./bower_modules/jquery/dist/**').pipe(gulp.dest('./wwwroot/Components/jquery'));
+    gulp.src('./bower_modules/yamm3/yamm/**').pipe(gulp.dest('./wwwroot/Components/yamm'));
+
 
 });
