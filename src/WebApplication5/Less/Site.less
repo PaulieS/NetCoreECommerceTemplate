@@ -1,6 +1,20 @@
 ﻿/**{
     border:1px dashed red;
 }*/
+@import "variables.less";
+
+.vertical-center {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+}
+
+.vertical-bottom {
+    display: inline-block;
+    float: none;
+    vertical-align: bottom;
+}
+
 /* SLIM TOP BAR*/
 ul.lang-selector {
     list-style-type: none;
@@ -34,10 +48,6 @@ ul.lang-selector {
 .main-top-bar {
     padding: 10px 0 10px 0;
 
-    .vertical-center {
-        vertical-align: middle;
-    }
-
     .shop-name {
         margin: 0;
         padding: 0;
@@ -45,6 +55,14 @@ ul.lang-selector {
 
     .search-input {
         width: 100%;
+    }
+
+    .search-box {
+        padding-top: 5px;
+    }
+
+    .shopping-cart {
+        padding-top: 5px;
     }
 }
 
@@ -84,7 +102,6 @@ ul.lang-selector {
     }
 
     .shopping-cart {
-        padding: 0;
         padding-right: 10px;
     }
 }
@@ -118,9 +135,9 @@ ul.subcategories {
 /*Special offers*/
 .super-offers-container {
     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content:space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .super-offer-item {
@@ -164,4 +181,151 @@ footer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+/*---------PRODUCTS PANEL---------------------*/
+#products-panel
+{
+    .description{
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+}
+
+#products-panel.display-rows {
+    .product {
+        display: block;
+        overflow: auto;
+
+        .thumbnail {
+            display: inline-block;
+            float: left;
+            margin: 5px 5px 5px 5px;
+        }
+    }
+}
+
+#products-panel.display-tiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .product {
+        max-width: 150px;
+
+        .thumbnail {
+            margin: 5px 5px 5px 5px;
+        }
+    }
+}
+
+#products-panel.display-small-list {
+   .product {
+        display: block;
+        overflow: auto;
+         h3{
+            font-size: medium;
+            margin:10px 0 5px 0;
+        }
+        .thumbnail {
+            display: inline-block;
+            float: left;
+            margin: 5px 5px 5px 5px;
+            max-height: 75px;
+            max-width: 75px;
+        }
+    }
+
+}
+
+
+#products-panel.display-table {
+    display: table;
+
+    .product {
+        display: table-row;
+
+        *{
+            margin: 5px 5px 5px 5px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .thumbnail {
+            margin: 5px 5px 5px 5px;
+            max-height: 50px;
+            max-width: 50px;
+        }
+    }
+}
+
+@media(min-width: @screen-xs) {
+    #products-panel.display-tiles {
+        justify-content: flex-start;
+    }
+}
+
+@media(max-width: @screen-xs) {
+    #products-panel.display-tiles {
+        justify-content: center;
+    }
+}
+
+/*---------View Selectors------------*/
+.view-selector {
+    i {
+        padding: 0px 5px 0px 5px;
+    }
+}
+
+.products-toolbar {
+    .view-selector {
+        .flex-container {
+            display: flex;
+            justify-content: flex-start;
+
+            a {
+                display: block;
+            }
+        }
+    }
+
+    .ordering {
+        .flex-container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .pagination-selector {
+        .flex-container {
+            display: flex;
+            justify-content: flex-end;
+            vertical-align: central;
+            padding-top: 5px;
+            min-height: 34px;
+        }
+    }
+}
+
+@media(max-width: @screen-md) {
+    .products-toolbar {
+        .view-selector {
+            .flex-container {
+                justify-content: center;
+            }
+        }
+
+        .ordering {
+            .flex-container {
+                justify-content: center;
+            }
+        }
+
+        .pagination-selector {
+            .flex-container {
+                justify-content: center;
+            }
+        }
+    }
 }
