@@ -2,6 +2,7 @@
     border:1px dashed red;
 }*/
 @import "variables.less";
+/*@import (reference) "../../bower_modules/bootstrap/less/bootstrap";*/
 
 .vertical-center {
     display: inline-block;
@@ -184,23 +185,99 @@ footer ul {
 }
 
 /*---------PRODUCTS PANEL---------------------*/
-#products-panel
-{
-    .description{
-        overflow:hidden;
-        text-overflow:ellipsis;
+#products-panel {
+    .description {
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
 #products-panel.display-rows {
     .product {
-        display: block;
-        overflow: auto;
+        margin-right: -15px;
+        margin-left: -15px;
+        content: " ";
+        display: table;
+        clear: both;
+        margin: auto;
 
-        .thumbnail {
-            display: inline-block;
-            float: left;
-            margin: 5px 5px 5px 5px;
+        & > * {
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .thumbnail-container {
+
+
+            @media (min-width: @screen-sm) {
+                float: left;
+                width: 25%;
+            }
+
+            .thumbnail {
+                @media(max-width:@screen-sm) {
+                    text-align: center;
+                }
+
+                @media (min-width: @screen-sm) {
+                    margin: 5px 5px 5px 5px;
+                }
+            }
+        }
+
+        .right-pane-wrapper {
+            & > * {
+                position: relative;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            margin: auto;
+
+            @media (min-width: @screen-sm) {
+                float: left;
+                width: 75%;
+            }
+
+            .title-wrapper {
+                @media (min-width: @screen-sm) {
+                    float: left;
+                    width: 100%;
+                }
+            }
+
+            .description {
+
+                @media (min-width: @screen-sm) {
+                    float: left;
+                    width: 100%;
+                }
+            }
+
+            .price {
+                @media(max-width:@screen-sm) {
+                    text-align: center;
+                }
+
+                @media (min-width: @screen-sm) {
+                    float: left;
+                    width: 50%;
+                }
+            }
+
+            .add-to-cart {
+                @media(max-width:@screen-sm) {
+                    text-align: center;
+                }
+
+                @media (min-width: 768px) {
+                    float: left;
+                    width: 50%;
+                }
+            }
         }
     }
 }
@@ -211,22 +288,36 @@ footer ul {
     flex-wrap: wrap;
 
     .product {
-        max-width: 150px;
+        max-width: 175px;
+
+        .description {
+            display: none;
+        }
 
         .thumbnail {
             margin: 5px 5px 5px 5px;
+        }
+
+        .price {
+            text-align: center;
+        }
+
+        .add-to-cart {
+            text-align: center;
         }
     }
 }
 
 #products-panel.display-small-list {
-   .product {
+    .product {
         display: block;
         overflow: auto;
-         h3{
+
+        h3 {
             font-size: medium;
-            margin:10px 0 5px 0;
+            margin: 10px 0 5px 0;
         }
+
         .thumbnail {
             display: inline-block;
             float: left;
@@ -234,18 +325,32 @@ footer ul {
             max-height: 75px;
             max-width: 75px;
         }
-    }
 
+        .price {
+            float: left;
+        }
+
+        .add-to-cart {
+            float: right;
+            margin-top: -30px;
+            margin-right: 5px;
+
+            .add-to-cart-btn {
+            }
+
+            .caption {
+                display: none;
+            }
+        }
+    }
 }
 
 
 #products-panel.display-table {
     display: table;
-
     .product {
         display: table-row;
-
-        *{
+        .thumbnail-container {
             margin: 5px 5px 5px 5px;
             display: table-cell;
             vertical-align: middle;
@@ -255,6 +360,20 @@ footer ul {
             margin: 5px 5px 5px 5px;
             max-height: 50px;
             max-width: 50px;
+        }
+
+        .right-pane-wrapper {
+           .add-to-cart,.title-wrapper,.description,.price {
+                margin: 5px 5px 5px 5px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .add-to-cart-btn {
+                .caption {
+                    display: none;
+                }
+            }
         }
     }
 }

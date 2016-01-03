@@ -1,6 +1,7 @@
 /**{
     border:1px dashed red;
 }*/
+/*@import (reference) "../../bower_modules/bootstrap/less/bootstrap";*/
 .vertical-center {
   display: inline-block;
   float: none;
@@ -146,13 +147,83 @@ footer ul {
   text-overflow: ellipsis;
 }
 #products-panel.display-rows .product {
-  display: block;
-  overflow: auto;
+  margin-right: -15px;
+  margin-left: -15px;
+  content: " ";
+  display: table;
+  clear: both;
+  margin: auto;
 }
-#products-panel.display-rows .product .thumbnail {
-  display: inline-block;
-  float: left;
-  margin: 5px 5px 5px 5px;
+#products-panel.display-rows .product > * {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  #products-panel.display-rows .product .thumbnail-container {
+    float: left;
+    width: 25%;
+  }
+}
+@media (max-width: 768px) {
+  #products-panel.display-rows .product .thumbnail-container .thumbnail {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  #products-panel.display-rows .product .thumbnail-container .thumbnail {
+    margin: 5px 5px 5px 5px;
+  }
+}
+#products-panel.display-rows .product .right-pane-wrapper {
+  margin: auto;
+}
+#products-panel.display-rows .product .right-pane-wrapper > * {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  #products-panel.display-rows .product .right-pane-wrapper {
+    float: left;
+    width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  #products-panel.display-rows .product .right-pane-wrapper .title-wrapper {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  #products-panel.display-rows .product .right-pane-wrapper .description {
+    float: left;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #products-panel.display-rows .product .right-pane-wrapper .price {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  #products-panel.display-rows .product .right-pane-wrapper .price {
+    float: left;
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #products-panel.display-rows .product .right-pane-wrapper .add-to-cart {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  #products-panel.display-rows .product .right-pane-wrapper .add-to-cart {
+    float: left;
+    width: 50%;
+  }
 }
 #products-panel.display-tiles {
   display: flex;
@@ -160,10 +231,19 @@ footer ul {
   flex-wrap: wrap;
 }
 #products-panel.display-tiles .product {
-  max-width: 150px;
+  max-width: 175px;
+}
+#products-panel.display-tiles .product .description {
+  display: none;
 }
 #products-panel.display-tiles .product .thumbnail {
   margin: 5px 5px 5px 5px;
+}
+#products-panel.display-tiles .product .price {
+  text-align: center;
+}
+#products-panel.display-tiles .product .add-to-cart {
+  text-align: center;
 }
 #products-panel.display-small-list .product {
   display: block;
@@ -180,13 +260,24 @@ footer ul {
   max-height: 75px;
   max-width: 75px;
 }
+#products-panel.display-small-list .product .price {
+  float: left;
+}
+#products-panel.display-small-list .product .add-to-cart {
+  float: right;
+  margin-top: -30px;
+  margin-right: 5px;
+}
+#products-panel.display-small-list .product .add-to-cart .caption {
+  display: none;
+}
 #products-panel.display-table {
   display: table;
 }
 #products-panel.display-table .product {
   display: table-row;
 }
-#products-panel.display-table .product * {
+#products-panel.display-table .product .thumbnail-container {
   margin: 5px 5px 5px 5px;
   display: table-cell;
   vertical-align: middle;
@@ -195,6 +286,17 @@ footer ul {
   margin: 5px 5px 5px 5px;
   max-height: 50px;
   max-width: 50px;
+}
+#products-panel.display-table .product .right-pane-wrapper .add-to-cart,
+#products-panel.display-table .product .right-pane-wrapper .title-wrapper,
+#products-panel.display-table .product .right-pane-wrapper .description,
+#products-panel.display-table .product .right-pane-wrapper .price {
+  margin: 5px 5px 5px 5px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#products-panel.display-table .product .right-pane-wrapper .add-to-cart-btn .caption {
+  display: none;
 }
 @media (min-width: 480px) {
   #products-panel.display-tiles {
