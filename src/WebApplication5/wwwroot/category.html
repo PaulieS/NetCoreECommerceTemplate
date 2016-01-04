@@ -9,6 +9,7 @@
     <link href="styles/site.css" rel="stylesheet" />
     <link href="components/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="components/yamm/yamm.css" rel="stylesheet" />
+    <link href="components/flag-icon-css/css/flag-icon.css" rel="stylesheet" />
     <script src="components/jquery/jquery.js"></script>
     <script src="components/bootstrap/js/bootstrap.js"></script>
     <script src="scripts/index.js"></script>
@@ -19,8 +20,8 @@
     <div class="container-fluid">
         <div class="slim-top-bar row">
             <ul class="lang-selector pull-left">
-                <li><a href="#">polski</a></li>
-                <li><a href="#">angielski</a></li>
+                <li><a href="#"><i class="flag-icon flag-icon-pl"></i></a></li>
+                <li><a href="#"><i class="flag-icon flag-icon-gb-eng"></i></a></li>
             </ul>
             <span class="pull-right"><a href="">Zaloguj się</a></span>
         </div>
@@ -100,103 +101,116 @@
                 <li class="active">Papiery</li>
             </ol>
         </div>
-     
-     <div class="row">
-         <div class="col-lg-3 col-md-4 hidden-sm hidden-xs">
-             <h3>Podkategorie </h3>
-             <ul class="subcategories col-md-12">
-                 <li><a href="#">Podkategoria</a></li>
-                 <li><a href="#">Podkategoria</a></li>
-                 <li><a href="#">Podkategoria</a></li>
-                 <li><a href="#">Podkategoria</a></li>
-                 <li><a href="#">Podkategoria</a></li>
-             </ul>
-         </div>
-         <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
-             <div class="row products-toolbar">
-                 <div class="col-lg-4 col-md-4  col-sm-12 col-xs-12 view-selector">
-                     <div class="flex-container hidden-xs hidden-sm">
-                         <a class="big-list" href="#"><i class="fa fa-2x fa-th-list"></i></a>
-                         <a class="tiles" href="#"><i class="fa fa-2x fa-th"></i>     </a>
-                         <a class="small-list" href="#"><i class="fa fa-2x fa-list"></i>   </a>
-                         <a class="table" href="#"><i class="fa fa-2x fa-table"></i>   </a>
-                     </div>
-                 </div><!--
-                           
-                       --><div class="ordering   col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                 <div class="flex-container">
-                     <select class="form-control">
-                         <option>Popularność</option>
-                         <option>Nazwa: A-Z</option>
-                         <option>Nazwa: Z-A</option>
-                         <option>Cena: rosnąco</option>
-                         <option>Cena: malejąco</option>
-                     </select>
-                 </div>
 
-                 </div><!--
+        <div class="row">
+            <div class="col-lg-3 col-md-4 hidden-sm hidden-xs">
+                <h3>Podkategorie </h3>
+                <ul class="subcategories col-md-12">
+                    <li><a href="#">Podkategoria</a></li>
+                    <li><a href="#">Podkategoria</a></li>
+                    <li><a href="#">Podkategoria</a></li>
+                    <li><a href="#">Podkategoria</a></li>
+                    <li><a href="#">Podkategoria</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                <div class="row products-toolbar">
+                    <div class="col-lg-4 col-md-4  col-sm-12 col-xs-12 view-selector">
+                        <div class="flex-container hidden-xs hidden-sm">
+                            <a class="big-list" href="#"><i class="fa fa-2x fa-th-list"></i></a>
+                            <a class="tiles" href="#"><i class="fa fa-2x fa-th"></i>     </a>
+                            <a class="small-list" href="#"><i class="fa fa-2x fa-list"></i>   </a>
+                            <a class="table" href="#"><i class="fa fa-2x fa-table"></i>   </a>
+                        </div>
+                    </div>
+                    <!--
 
-                    --><div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 vertical-center pagination-selector">
-                 <div class="flex-container">
-                  <div>   Pokaż <span><a href="#">20</a></span> <span><a href="#">50</a></span> <span><a href="#">100</a></span></div>
-                 </div>
-                 </div>
-             </div>
-             <div class="row">
-                 <div id="products-panel" class="display-rows">
-                     <div class="product">
-                             <div class="thumbnail-container">
-                                 <a href="#">
-                                     <img class="thumbnail" src="images/product1.jpg" />
-                                 </a>
-                             </div>
-                         <div class="right-pane-wrapper">
-                             <div class="title-wrapper"><h3 class="title"><a href="#">HTC 1030aaaaaa aaa</a></h3></div>
-                             <div class="description">Opis produktu asdasdasd asdasd</div>
-                             <div class="price"><strong>100,99zł</strong></div>
-                             <div class="add-to-cart"><button class="btn add-to-cart-btn"><i class="fa fa-2x fa-cart-plus"></i><span class="caption">Dodaj do koszyka</span></button></div>
-                         </div>
+                    -->
+                    <div class="ordering   col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="flex-container">
+                            <select class="form-control">
+                                <option>Popularność</option>
+                                <option>Nazwa: A-Z</option>
+                                <option>Nazwa: Z-A</option>
+                                <option>Cena: rosnąco</option>
+                                <option>Cena: malejąco</option>
+                            </select>
+                        </div>
 
-                     </div>
-                     <div class="product">
-                         <div class="thumbnail-container">
-                             <a href="#">
-                                 <img class="thumbnail" src="images/product1.jpg" />
-                             </a>
-                         </div>
-                         <div class="right-pane-wrapper">
-                             <div class="title-wrapper"><h3 class="title"><a href="#">HTC 1030aaaaaa aaa</a></h3></div>
-                             <div class="description">Opis produktu</div>
-                             <div class="price"><strong>100,99zł</strong></div>
-                             <div class="add-to-cart"><button class="btn add-to-cart-btn"><i class="fa fa-2x fa-cart-plus"></i><span class="caption">Dodaj do koszyka</span></button></div>
-                         </div>
+                    </div>
+                    <!--
 
-                     </div>
-                 </div>
-             </div>
-             <div class="row pagination">
-                 <nav>
-                     <ul class="pagination">
-                         <li>
-                             <a href="#" aria-label="Previous">
-                                 <span aria-hidden="true">&laquo;</span>
-                             </a>
-                         </li>
-                         <li><a href="#">1</a></li>
-                         <li><a href="#">2</a></li>
-                         <li><a href="#">3</a></li>
-                         <li><a href="#">4</a></li>
-                         <li><a href="#">5</a></li>
-                         <li>
-                             <a href="#" aria-label="Next">
-                                 <span aria-hidden="true">&raquo;</span>
-                             </a>
-                         </li>
-                     </ul>
-                 </nav>
-             </div>
-         </div>
-     </div>
+                    -->
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 vertical-center pagination-selector">
+                        <div class="flex-container">
+                            <div>   Pokaż <span><a href="#">20</a></span> <span><a href="#">50</a></span> <span><a href="#">100</a></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="products-panel" class="display-rows">
+                        <div class="product">
+                            <div class="thumbnail-container">
+                                <a href="#">
+                                    <img class="thumbnail" src="images/product1.jpg" />
+                                </a>
+                            </div>
+                            <div class="title-wrapper"><h3 class="title"><a href="#">Lorem ipsum dolor</a></h3></div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod tempus varius. Aenean at congue lorem. Vestibulum sagittis nisi faucibus dolor blandit vehicula.  </div>
+                            <div class="price-container"><span class="price">100,99 zł</span></div>
+                            <div class="add-to-cart"><button class="btn add-to-cart-btn"><i class="fa fa-2x fa-cart-plus"></i><span class="caption">Dodaj do koszyka</span></button></div>
+                            <div class="clearfix"></div>
+
+                        </div>
+                        <div class="product">
+                            <div class="thumbnail-container">
+                                <a href="#">
+                                    <img class="thumbnail" src="images/product1.jpg" />
+                                </a>
+                            </div>
+                            <div class="title-wrapper"><h3 class="title"><a href="#">Lorem ipsum dolor amet, consectetur</a></h3></div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod tempus varius. Aenean at congue lorem. Vestibulum sagittis nisi faucibus dolor blandit vehicula.<span class="extended"> Nullam sem felis, euismod vitae sem sed, rhoncus feugiat erat. Proin vel semper ex, eu pretium purus.</span> </div>
+                            <div class="price-container"><span class="price">100,99 zł</span></div>
+                            <div class="add-to-cart"><button class="btn add-to-cart-btn"><i class="fa fa-2x fa-cart-plus"></i><span class="caption">Dodaj do koszyka</span></button></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="product">
+                            <div class="thumbnail-container">
+                                <a href="#">
+                                    <img class="thumbnail" src="images/product1.jpg" />
+                                </a>
+                            </div>
+                            <div class="title-wrapper"><h3 class="title"><a href="#">Lorem ipsum dolor amet, consectetur</a></h3></div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+                            <div class="price-container"><span class="price">100,99 zł</span></div>
+                            <div class="add-to-cart"><button class="btn add-to-cart-btn"><i class="fa fa-2x fa-cart-plus"></i><span class="caption">Dodaj do koszyka</span></button></div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pagination">
+                    <nav>
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="footer container-fluid">
