@@ -21,15 +21,14 @@
                 <li><a href="#"><i class="flag-icon flag-icon-pl"></i></a></li>
                 <li><a href="#"><i class="flag-icon flag-icon-gb-eng"></i></a></li>
             </ul>
-            <span class="pull-right"><a href="">Zaloguj się</a></span>
+            <span class="pull-right"><a href="login.html">Zaloguj się</a></span>
         </div>
     </div>
-
     <nav class="navbar navbar-default yamm categories">
         <div class="container">
             <div class="row main-top-bar">
                 <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-                    <h1 class="shop-name"><a href="#">Nazwa sklepu</a></h1>
+                    <h1 class="shop-name"><a href="index.html">Nazwa sklepu</a></h1>
                 </div>
                 <!--
 
@@ -57,7 +56,7 @@
                 -->
                 <div class="shopping-cart col-lg-2 col-md-4 col-sm-2 col-xs-2">
                     <div class="">
-                        <button class="btn btn-default go-to-cart" type="button"> <icon class="glyphicon glyphicon-shopping-cart"></icon> <span class="visible-md-inline visible-lg-inline">Przejdź do koszyka</span></button>
+                        <a class="btn btn-default go-to-cart" href="cart.html"> <icon class="glyphicon glyphicon-shopping-cart"></icon> <span class="visible-md-inline visible-lg-inline">Przejdź do koszyka</span></a>
                     </div>
                 </div>
             </div>
@@ -66,29 +65,29 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="categories nav navbar-nav">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Papiery</a>
+                        <a href="category.html" class="dropdown-toggle" data-toggle="dropdown">Papiery</a>
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="yamm-content">
                                     <div class="row">
                                         <h3>Kategorie w dziale: </h3>
                                         <ul class="subcategories col-md-12">
-                                            <li><a href="#">Podkategoria</a></li>
-                                            <li><a href="#">Podkategoria</a></li>
-                                            <li><a href="#">Podkategoria</a></li>
-                                            <li><a href="#">Podkategoria</a></li>
-                                            <li><a href="#">Podkategoria</a></li>
+                                            <li><a href="category.html">Podkategoria</a></li>
+                                            <li><a href="category.html">Podkategoria</a></li>
+                                            <li><a href="category.html">Podkategoria</a></li>
+                                            <li><a href="category.html">Podkategoria</a></li>
+                                            <li><a href="category.html">Podkategoria</a></li>
                                         </ul>
-                                        <a href="#"> Wszystkie kategorie>></a>
+                                        <a href="category.html"> Wszystkie kategorie>></a>
                                     </div>
                                 </div>
                             </li>
                         </ul>
 
                     </li>
-                    <li><a href="#">Pieczątki</a></li>
-                    <li><a href="#">Długopisy 1</a></li>
-                    <li><a href="#">Segregatory 1</a></li>
+                    <li><a href="category.html">Pieczątki</a></li>
+                    <li><a href="category.html">Długopisy 1</a></li>
+                    <li><a href="category.html">Segregatory 1</a></li>
                 </ul>
             </div>
         </div>
@@ -97,66 +96,82 @@
     <div class="row">
         <h1>Twój koszyk</h1>
     </div>
-<div class="cart table  table-striped">
-    <div class="row hidden-sm hidden-xs">
-        <div class="col-md-2"></div>
-        <div class="col-md-4">
-            Produkt
-        </div>
-        <div class="col-md-2">
-            Cena
-        </div>
-        <div class="col-md-1">
-            Ilość
-        </div>
-        <div class="col-md-1">
-            Razem 
-        </div>
-        <div class="col-md-1">
-        </div>
-    </div>
-    <div class="row  row-eq-height cart-item">
-        <div class="col-md-2 col-sm-4 col-xs-4 thumbnail-container">
-            <img class="thumbnail" src="images/product1.jpg" />
-        </div>
-        <div class="col-md-4 col-sm-8 col-xs-8 name-container">
-            Lorem ipsum dolor amet
-        </div>
-        <div class="clearfix hidden-lg hidden-md">
-        </div>
-        <div class="col-md-2 col-sm-3 col-xs-3 price-wrapper">
-            100,99 zł
-        </div>
-        <div class="col-md-1 col-sm-3 col-xs-3  quantity-wrapper">
-            <input class="quantity form-control" type="number" value="2" min="0" step="1" />
-        </div>
-        <div class="col-md-1 col-sm-3 col-xs-3 total-price-wrapper">
-            200,98 zł
-        </div>
-        <div class="col-md-1 col-sm-3 col-xs-3">
-            <button class="btn btn-xs btn-danger"><i class="glyphicon-remove glyphicon"></i></button>
-        </div>
-    </div>
-    <div class="row  row-eq-height cart-item">
-        <div class="col-md-2 col-sm-4 col-xs-4 thumbnail-container">
-            <img class="thumbnail" src="images/product1.jpg" />
-        </div>
-        <div class="col-md-4 col-sm-8 col-xs-8 name-container">
-            <span>Lorem ipsum dolor amet</span>
-        </div>
-        <div class="clearfix hidden-lg hidden-md">
-        </div>
-        <div class="col-md-2 col-sm-3 col-xs-3 price-wrapper">
-            100,99 zł
-        </div>
-        <div class="col-md-1 col-sm-3 col-xs-3  quantity-wrapper">
-            <input class="quantity form-control" type="number" value="2" min="0" step="1" />
-        </div>
-        <div class="col-md-1 col-sm-3 col-xs-3 total-price-wrapper">
-            200,98 zł
-        </div>
-        <div class="col-md-1 col-sm-3 col-xs-3">
-            <button class="btn btn-xs btn-danger"><i class="glyphicon-remove glyphicon"></i></button>
+<div class="cart">
+    <table class="rwd-table cart-items">
+           <tr>
+                <th class=""></th>
+            <th class="">
+                Produkt
+            </th>
+            <th class="">
+                Cena
+            </th>
+            <th class="">
+                Ilość
+            </th>
+            <th class="">
+                Razem
+            </th>
+            <th class=""></th>
+           </tr>
+     
+        <tr class="cart-item">
+            <td data-th=" " class="thumbnail-container">
+                <img class="thumbnail" src="images/product1.jpg" />
+            </td>
+            <td data-th="Produkt" class="name-container">
+                Lorem ipsum dolor amet
+            </td>
+            <td data-th="Cena" class="price-wrapper">
+                100,99 zł
+            </td>
+            <td data-th="Ilość" class="quantity-wrapper">
+                <input class="quantity form-control" type="number" value="2" min="0" step="1" />
+            </td>
+            <td data-th="Razem" class="total-price-wrapper">
+                200,98 zł
+            </td>
+            <td data-th=" " class="">
+                <button class="btn btn-xs btn-danger"><i class="glyphicon-remove glyphicon"></i><span class="btn-caption-sm btn-caption-xs btn-caption-sm">Usuń</span></button>
+            </td>
+        </tr>
+        <tr class="cart-item">
+            <td data-th=" " class="thumbnail-container">
+                <img class="thumbnail" src="images/product1.jpg" />
+            </td>
+            <td data-th="Produkt" class="name-container">
+                Lorem ipsum dolor amet
+            </td>
+            <td data-th="Cena" class="price-wrapper">
+                100,99 zł
+            </td>
+            <td data-th="Ilość" class="quantity-wrapper">
+                <input class="quantity form-control" type="number" value="2" min="0" step="1" />
+            </td>
+            <td data-th="Razem" class="total-price-wrapper">
+                200,98 zł
+            </td>
+            <td data-th=" " class="">
+                <button class="btn btn-xs btn-danger"><i class="glyphicon-remove glyphicon"></i><span class="btn-caption-sm btn-caption-xs">Usuń</span></button>
+            </td>
+        </tr>
+        <tr class="summary">
+            <td colspan="4"> <span class="total-price-label pull-right"> Wartość zakupów:</span><div class="clearflix"></div></td>
+            <td><span class="total-price">123456 zł</span><div class="clearflix"></div></td>
+        </tr>
+    </table>
+    <div class="row ">
+        <div class="cart-buttons">
+             <div class="go-back col-md-6">
+                <button class="btn btn-default ">
+                    <span class="caption">Powrót do zakupów</span>
+                </button>
+             </div>
+            <div class="go-to-payments col-md-6">
+                <button class="btn btn-lg btn-success">
+                    <span class="btn-caption">Przejdź do płatności </span>
+                </button>
+            </div>
         </div>
     </div>
 </div>
