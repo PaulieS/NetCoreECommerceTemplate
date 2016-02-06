@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApplication5", "src\WebApplication5\WebApplication5.xproj", "{B971F039-1B73-47E8-AC74-E980C15C17BC}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sklep Internetowy", "src\WebApplication5\Sklep Internetowy.xproj", "{B971F039-1B73-47E8-AC74-E980C15C17BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
