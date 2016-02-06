@@ -10,6 +10,7 @@
     <link href="components/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="components/yamm/yamm.css" rel="stylesheet" />
     <link href="components/flag-icon-css/css/flag-icon.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300italic,300,400italic,500italic,500,700italic,700,900italic,900" rel="stylesheet" type="text/css">
     <script src="components/jquery/jquery.js"></script>
     <script src="components/bootstrap/js/bootstrap.js"></script>
     <script src="scripts/index.js"></script>
@@ -27,46 +28,44 @@
         </div>
     </div>
     <nav class="navbar navbar-default yamm categories">
-        <div class="container">
-            <div class="row main-top-bar">
-                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-                    <h1 class="shop-name"><a href="index.html">Nazwa sklepu</a></h1>
-                </div>
-                <!--
+        <div class="container main-top-bar">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <h1 class="shop-name"><a href="index.html">Nazwa sklepu</a></h1>
+            </div>
+            <!--
 
-                -->
-                <div class="search-box  col-lg-7 col-md-4 col-sm-10 col-xs-10">
-                    <button type="button" data-target="#navbar" data-toggle="collapse" class="navbar-toggle pull-left">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div class="">
-                        <form action="">
-                            <div class="input-group">
-                                <input type="text" class="form-control search-input" />
-                                <span class="input-group-btn">
-                                    <button type="button" class="btn btn-default search"> <span class="glyphicon glyphicon-search"></span> </button>
-                                    <button type="button" class="btn btn-default clear-search "><span class="glyphicon glyphicon-remove"></span></button>
-                                </span>
-                            </div>
-                        </form>
-                    </div>
+            -->
+            <div class="search-box  col-lg-7 col-md-7 col-sm-10 col-xs-10">
+                <button type="button" data-target="#navbar" data-toggle="collapse" class="navbar-toggle pull-left">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control search-input" />
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-primary search"> <span class="glyphicon glyphicon-search"></span> </button>
+                                <button type="button" class="btn btn-primary clear-search "><span class="glyphicon glyphicon-remove"></span></button>
+                            </span>
+                        </div>
+                    </form>
                 </div>
-                <!--
-                -->
-                <div class="shopping-cart col-lg-2 col-md-4 col-sm-2 col-xs-2">
-                    <div class="">
-                        <a class="btn btn-default go-to-cart" href="cart.html"> <icon class="glyphicon glyphicon-shopping-cart"></icon> <span class="visible-md-inline visible-lg-inline">Przejdź do koszyka</span></a>
-                    </div>
+            </div>
+            <!--
+            -->
+            <div class="shopping-cart col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                <div class="">
+                    <a class="btn btn-primary go-to-cart" href="cart.html"> <icon class="glyphicon glyphicon-shopping-cart"></icon> <span class="visible-md-inline visible-lg-inline">Przejdź do koszyka</span></a>
                 </div>
             </div>
         </div>
         <div class="container">
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="categories nav navbar-nav">
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="category.html" class="dropdown-toggle" data-toggle="dropdown">Papiery</a>
                         <ul class="dropdown-menu">
                             <li>
@@ -80,6 +79,7 @@
                                             <li><a href="category.html">Podkategoria</a></li>
                                             <li><a href="category.html">Podkategoria</a></li>
                                         </ul>
+                                        <img src="images/mega-menu-photo.png" />
                                         <a href="category.html"> Wszystkie kategorie>></a>
                                     </div>
                                 </div>
@@ -96,9 +96,6 @@
     </nav>
     <div class="content container">
         <div class="row">
-            <h2>Papiery</h2>
-        </div>
-        <div class="row">
             <ol class="breadcrumb">
                 <li><a href="#">Strona główna</a></li>
                 <li class="active">Papiery</li>
@@ -106,7 +103,11 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-3 col-md-4 hidden-sm hidden-xs">
+            <h2>Papiery</h2>
+        </div>
+  
+        <div class="row">
+            <div class="col-lg-3 col-md-4 hidden-sm hidden-xs categories">
                 <h3>Podkategorie </h3>
                 <ul class="subcategories col-md-12">
                     <li><a href="#">Podkategoria</a></li>
@@ -146,7 +147,7 @@
                     -->
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 vertical-center pagination-selector">
                         <div class="flex-container">
-                            <div>   Pokaż <span><a href="#">20</a></span> <span><a href="#">50</a></span> <span><a href="#">100</a></span></div>
+                            <div>   Pokaż <span class="active"><a href="#">20</a></span> <span><a href="#">50</a></span> <span><a href="#">100</a></span></div>
                         </div>
                     </div>
                 </div>
@@ -154,11 +155,11 @@
                     <div id="products-panel" class="display-rows">
                         <div class="product">
                             <div class="thumbnail-container">
-                                <a href="#">
+                                <a href="/details.html">
                                     <img class="thumbnail" src="images/product1.jpg" />
                                 </a>
                             </div>
-                            <div class="title-wrapper"><h3 class="title"><a href="#">Lorem ipsum dolor</a></h3></div>
+                            <div class="title-wrapper"><h3 class="title"><a href="/details.html">Lorem ipsum dolor</a></h3></div>
                             <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod tempus varius. Aenean at congue lorem. Vestibulum sagittis nisi faucibus dolor blandit vehicula.  </div>
                             <div class="price-container"><span class="price">100,99 zł</span></div>
                             <div class="add-to-cart"><button class="btn add-to-cart-btn"><i class="fa fa-2x fa-cart-plus"></i><span class="caption">Dodaj do koszyka</span></button></div>
@@ -167,11 +168,11 @@
                         </div>
                         <div class="product">
                             <div class="thumbnail-container">
-                                <a href="#">
+                                <a href="/details.html">
                                     <img class="thumbnail" src="images/product1.jpg" />
                                 </a>
                             </div>
-                            <div class="title-wrapper"><h3 class="title"><a href="#">Lorem ipsum dolor amet, consectetur</a></h3></div>
+                            <div class="title-wrapper"><h3 class="title"><a href="/details.html">Lorem ipsum dolor amet, consectetur</a></h3></div>
                             <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod tempus varius. Aenean at congue lorem. Vestibulum sagittis nisi faucibus dolor blandit vehicula.<span class="extended"> Nullam sem felis, euismod vitae sem sed, rhoncus feugiat erat. Proin vel semper ex, eu pretium purus.</span> </div>
                             <div class="price-container"><span class="price">100,99 zł</span></div>
                             <div class="add-to-cart"><button class="btn add-to-cart-btn"><i class="fa fa-2x fa-cart-plus"></i><span class="caption">Dodaj do koszyka</span></button></div>
@@ -179,11 +180,11 @@
                         </div>
                         <div class="product">
                             <div class="thumbnail-container">
-                                <a href="#">
+                                <a href="/details.html">
                                     <img class="thumbnail" src="images/product1.jpg" />
                                 </a>
                             </div>
-                            <div class="title-wrapper"><h3 class="title"><a href="#">Lorem ipsum dolor amet, consectetur</a></h3></div>
+                            <div class="title-wrapper"><h3 class="title"><a href="/details.html">Lorem ipsum dolor amet, consectetur</a></h3></div>
                             <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
                             <div class="price-container"><span class="price">100,99 zł</span></div>
                             <div class="add-to-cart"><button class="btn add-to-cart-btn"><i class="fa fa-2x fa-cart-plus"></i><span class="caption">Dodaj do koszyka</span></button></div>
